@@ -4,6 +4,8 @@ n0 <- 40
 y0 <- sort(rexp(n), decreasing = TRUE)
 tau <- 1
 y1 <- y0 + tau
+z <- sample(c(rep(1, n1), rep(0, n0)))
+
 
 tau_hat_p <- c()
 V_til_p <- c()
