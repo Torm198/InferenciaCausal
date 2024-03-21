@@ -11,7 +11,7 @@ t <- t.test(y[z==0],y[z==1],var.equal = F)$statistic
 t_sub <- t.test(y_sub[z_sub==0],y_sub[z_sub==1],var.equal = F)$statistic
 
 
-R_size <- c(1:5000)
+R_size <- c(100,200,300,400,500,1000,2500,5000,7500,10000)
 pfrt <- rep(0,length(R_size))
 pfrt_hat <- rep(0,length(R_size))
 pfrt_til <- rep(0,length(R_size))
