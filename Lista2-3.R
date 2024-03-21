@@ -41,5 +41,7 @@ W_a <- wilcox.test(Y_i[Z_i==1],Y_i[Z_i==0])$statistic
   
 }
 c(mean(abs(W_perm)>=abs(W)),mean(abs(W_perm_a)>=abs(W_a)),wilcox.test(Y_i[Z_i==0],Y_i[Z_i==1])$p.value)
+# 0.00530000 0.00530000 0.01094664
 c(mean(abs(t_perm)>=abs(t)),mean(abs(t_perm_a)>=abs(t_a)),t.test(Y_i[Z_i==0],Y_i[Z_i==1])$p.value)
+# 0.009000000 0.009000000 0.007892971
 
